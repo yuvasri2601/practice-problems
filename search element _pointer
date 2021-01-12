@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+    int a[20],i,n,c=0,key,*p;
+    printf("Enter the number of elements:");
+    scanf("%d",&n);
+    printf("Enter the array elements:");
+    for(i=0;i<n;i++)
+        scanf("%d",&a[i]);
+    printf("Enter the key element:");
+    scanf("%d",&key);
+    p=&a;
+    for(i=0;i<n;i++){
+        if(*p==key){
+            c=1;break;
+        }
+    }
+    if(c==1)
+        printf("Element found");
+    else
+        printf("Element not found");
+}
