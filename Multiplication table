@@ -1,0 +1,5 @@
+n=int(input("Which table you want: "))
+low=int(input("Enter base value: "))
+upper=int(input("Enter upto: "))
+for i in range(low,upper+1):
+  print(i,"*",n,"=",i*n)
