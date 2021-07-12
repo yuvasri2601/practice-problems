@@ -1,0 +1,20 @@
+S1=input("S1 : ")
+S2=input("S2 : ")
+MS1=[]
+MS2=[]
+CMS=[]
+vowels='aeiou'
+for i in vowels:
+  if i not in S1:
+    MS1.append(i)
+  if i not in S2:
+    MS2.append(i)
+MS1_result='[%s]' % ','.join(map(str,MS1))
+print("MS1 :",MS1_result)
+MS2_result='[%s]' % ','.join(map(str,MS2))
+print("MS2 :",MS2_result)
+for i in MS1:
+  if i in MS2:
+     CMS.append(i)
+CMS_result='[%s]' % ','.join(map(str,CMS))
+print("CMS : ",CMS_result)
